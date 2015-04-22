@@ -15,6 +15,6 @@ require_relative 'Plainify'
 Dir.glob('*.pdf') do |pdffile|
   textfile = "#{pdffile[0..-5]}.txt"
   LNCS_Plainify.PDFtoText pdffile, textfile
-  LNCS_Plainify.CleanUpTheRottenMessIn textfile
+  LNCS_Plainify.CleanUpTheFilthyMessIn textfile
 end
 ```
